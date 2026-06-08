@@ -48,3 +48,5 @@ temp/
 # Testing
 coverage/
 .nyc_output/
+
+server/google-service-account.json
