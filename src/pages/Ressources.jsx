@@ -9,30 +9,30 @@ const resources = [
   {
     icon: 'fa-regular fa-file-lines',
     iconClass: 'icon-blue',
-    title: 'Guides pratiques',
-    text: 'Des guides simples pour mieux utiliser WhatsApp Business et structurer votre relation client.',
-    link: 'Lire les guides',
+    titleKey: 'resources.cards.guides.title',
+    textKey: 'resources.cards.guides.text',
+    linkKey: 'resources.cards.guides.link',
   },
   {
     icon: 'fa-solid fa-video',
     iconClass: 'icon-green',
-    title: 'Webinaires',
-    text: 'Des sessions en ligne pour decouvrir les bonnes pratiques et poser vos questions a nos experts.',
-    link: 'Voir les webinaires',
+    titleKey: 'resources.cards.webinars.title',
+    textKey: 'resources.cards.webinars.text',
+    linkKey: 'resources.cards.webinars.link',
   },
   {
     icon: 'fa-regular fa-newspaper',
     iconClass: 'icon-yellow',
-    title: 'Blog',
-    text: "Conseils, tendances et retours d'expérience pour développer une relation client durable.",
-    link: 'Lire le blog',
+    titleKey: 'resources.cards.blog.title',
+    textKey: 'resources.cards.blog.text',
+    linkKey: 'resources.cards.blog.link',
   },
   {
     icon: 'fa-solid fa-lightbulb',
     iconClass: 'icon-purple',
-    title: 'Bonnes pratiques',
-    text: 'Des méthodes concrètes pour répondre plus vite, fidéliser et transformer chaque conversation.',
-    link: 'Explorer',
+    titleKey: 'resources.cards.bestPractices.title',
+    textKey: 'resources.cards.bestPractices.text',
+    linkKey: 'resources.cards.bestPractices.link',
   },
 ]
 
@@ -153,15 +153,12 @@ export default function Ressources() {
     <main className="page-main">
       <section className="resources-hero">
         <div className="resources-hero-content">
-          <span className="tag-blue">RESSOURCES</span>
+          <span className="tag-blue">{t('resources.hero.tag')}</span>
           <h1>
-            Des ressources pour mieux gerer <br />
-            <span className="highlight-green">vos relations sur WhatsApp</span>
+            {t('resources.hero.titlePart1')} <br />
+            <span className="highlight-green">{t('resources.hero.titleHighlight')}</span>
           </h1>
-          <p className="section-subtitle text-left">
-            Guides, webinaires, blog et bonnes pratiques pour vous aider a centraliser vos conversations,
-            repondre plus vite et creer une experience client plus fluide.
-          </p>
+          <p className="section-subtitle text-left">{t('resources.hero.subtitle')}</p>
         </div>
 
         <div className="resources-hero-graphics">
@@ -170,19 +167,19 @@ export default function Ressources() {
 
             <div className="floating-badge badge-guides">
               <span className="badge-icon icon-blue"><i className="fa-regular fa-file-lines"></i></span>
-              Guides
+              {t('resources.badges.guides')}
             </div>
             <div className="floating-badge badge-webinaires">
               <span className="badge-icon icon-green"><i className="fa-solid fa-video"></i></span>
-              Webinaires
+              {t('resources.badges.webinars')}
             </div>
             <div className="floating-badge badge-blog">
               <span className="badge-icon icon-yellow"><i className="fa-regular fa-newspaper"></i></span>
-              Blog
+              {t('resources.badges.blog')}
             </div>
             <div className="floating-badge badge-bonnes-pratiques">
               <span className="badge-icon icon-purple"><i className="fa-solid fa-lightbulb"></i></span>
-              Bonnes pratiques
+              {t('resources.badges.bestPractices')}
             </div>
             <div className="whatsapp-bubble-large">
               <i className="fa-brands fa-whatsapp"></i>
@@ -193,16 +190,16 @@ export default function Ressources() {
 
       <section className="resources-cards-section">
         <div className="resources-grid">
-          {resources.map((resource) => (
-            <article className="resource-card-large" key={resource.title}>
+              {resources.map((resource) => (
+            <article className="resource-card-large" key={resource.titleKey}>
               <div className="resource-card-header">
                 <div className={`icon-circle ${resource.iconClass}`}>
                   <i className={resource.icon}></i>
                 </div>
-                <h3>{resource.title}</h3>
+                <h3>{t(resource.titleKey)}</h3>
               </div>
-              <p>{resource.text}</p>
-              <a href="#" className="link-green">{resource.link} <i className="fa-solid fa-arrow-right"></i></a>
+              <p>{t(resource.textKey)}</p>
+              <a href="#" className="link-green">{t(resource.linkKey)} <i className="fa-solid fa-arrow-right"></i></a>
             </article>
           ))}
         </div>
@@ -254,35 +251,33 @@ export default function Ressources() {
 
       <section className="form-cta-section" id="contact-form">
         <div className="form-cta-container">
-          <div className="form-cta-text">
+            <div className="form-cta-text">
             <h2>
-              Prêt à transformer vos conversations en <span className="highlight-green-light">relations durables ?</span>
+              {t('contact.cta.titlePart1')} <span className="highlight-green-light">{t('contact.cta.titleHighlight')}</span>
             </h2>
-            <p>
-              Demandez une démonstration et découvrez comment Centrelatio peut simplifier votre relation client sur WhatsApp.
-            </p>
+            <p>{t('contact.cta.subtitle')}</p>
             <div className="form-cta-badges">
-              <span className="cta-badge"><i className="fa-solid fa-check"></i> 100% WhatsApp</span>
-              <span className="cta-badge"><i className="fa-solid fa-check"></i> Sans application</span>
-              <span className="cta-badge"><i className="fa-solid fa-check"></i> Réponse rapide</span>
+              <span className="cta-badge"><i className="fa-solid fa-check"></i> {t('contact.cta.badges.0')}</span>
+              <span className="cta-badge"><i className="fa-solid fa-check"></i> {t('contact.cta.badges.1')}</span>
+              <span className="cta-badge"><i className="fa-solid fa-check"></i> {t('contact.cta.badges.2')}</span>
             </div>
           </div>
 
-          <div className="form-cta-box">
-            <h3>Demander une démonstration</h3>
+            <div className="form-cta-box">
+            <h3>{t('contact.formTitle')}</h3>
             <form className="demo-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <input
                   name="name"
                   type="text"
-                  placeholder="Nom complet"
+                  placeholder={t('contact.form.namePlaceholder')}
                   value={form.name}
                   onChange={handleChange}
                 />
                 <input
                   name="email"
                   type="email"
-                  placeholder="Email professionnel"
+                  placeholder={t('contact.form.emailPlaceholder')}
                   value={form.email}
                   onChange={handleChange}
                 />
@@ -291,14 +286,14 @@ export default function Ressources() {
                 <input
                   name="entreprise"
                   type="text"
-                  placeholder="Entreprise"
+                  placeholder={t('contact.form.companyPlaceholder')}
                   value={form.entreprise}
                   onChange={handleChange}
                 />
                 <input
                   name="phone"
                   type="tel"
-                  placeholder="Numero WhatsApp"
+                  placeholder={t('contact.form.whatsappPlaceholder')}
                   value={form.phone || ''}
                   onChange={handleChange}
                 />
@@ -306,12 +301,12 @@ export default function Ressources() {
               <div className="form-row">
                 <select name="resourceName" value={form.resourceName} onChange={handleChange}>
                   <option value="" disabled>
-                    Besoin principal
+                    {t('contact.form.selectPlaceholder')}
                   </option>
-                  <option>Relation client</option>
-                  <option>Support / SAV</option>
-                  <option>Promotions</option>
-                  <option>Fidelisation</option>
+                  <option>{t('contact.form.options.relation')}</option>
+                  <option>{t('contact.form.options.support')}</option>
+                  <option>{t('contact.form.options.promotions')}</option>
+                  <option>{t('contact.form.options.loyalty')}</option>
                 </select>
               </div>
               {status && (
@@ -327,16 +322,16 @@ export default function Ressources() {
                 className="btn btn-primary w-100"
                 type="submit"
                 disabled={loading}
-                aria-label="Envoyer la demande de démonstration"
+                aria-label={t('contact.form.ariaLabel')}
               >
                 {loading ? (
                   <span className="inline-flex items-center gap-3">
                     <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                    Envoi...
+                    {t('contact.button.sending')}
                   </span>
                 ) : (
                   <>
-                    <i className="fa-brands fa-whatsapp"></i> Envoyer la demande
+                    <i className="fa-brands fa-whatsapp"></i> {t('contact.button.submit')}
                   </>
                 )}
               </button>

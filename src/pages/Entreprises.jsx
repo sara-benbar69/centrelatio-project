@@ -1,11 +1,13 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 import { setPageMeta } from '../lib/seo';
 import StatsSection from '../components/StatsSection';
 import IntegrationsGrid from '../components/IntegrationsGrid';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
 
 function Entreprises() {
+    const { t } = useTranslation()
   const testimonials = [
     {
       quote: "Centrelatio a transformé notre relation client. Nous répondons plus vite et nos clients sont plus satisfaits que jamais.",
@@ -55,8 +57,8 @@ function Entreprises() {
         
         <section id="cas-usage" className="enterprise-hero">
             <div className="enterprise-header-top">
-                <h1>Pour les entreprises, retailers<br /><span className="highlight-green">et institutions</span></h1>
-                <p>Centralisez toutes vos conversations WhatsApp, collaborez en équipe et offrez une expérience client exceptionnelle.</p>
+                <h1>{t('entreprises.header.titlePart1')}<br /><span className="highlight-green">{t('entreprises.header.titleHighlight')}</span></h1>
+                <p>{t('entreprises.header.subtitle')}</p>
             </div>
             
             <div className="enterprise-layout">
@@ -64,73 +66,73 @@ function Entreprises() {
                     <div className="e-feature-item">
                         <div className="e-icon icon-blue"><i className="fa-solid fa-inbox"></i></div>
                         <div className="e-feature-text">
-                            <h4>Boîte de réception partagée</h4>
-                            <p>Toutes vos conversations WhatsApp dans un seul tableau de bord.</p>
+                            <h4>{t('entreprises.features.inbox.title')}</h4>
+                            <p>{t('entreprises.features.inbox.text')}</p>
                         </div>
                     </div>
                     <div className="e-feature-item">
                         <div className="e-icon icon-green"><i className="fa-solid fa-users"></i></div>
                         <div className="e-feature-text">
-                            <h4>Attribution & collaboration</h4>
-                            <p>Attribuez les conversations et collaborez en temps réel avec votre équipe.</p>
+                            <h4>{t('entreprises.features.assign.title')}</h4>
+                            <p>{t('entreprises.features.assign.text')}</p>
                         </div>
                     </div>
                     <div className="e-feature-item">
                         <div className="e-icon icon-yellow"><i className="fa-solid fa-bolt"></i></div>
                         <div className="e-feature-text">
-                            <h4>Réponses rapides</h4>
-                            <p>Gagnez du temps avec des modèles de réponses et des FAQ pré-enregistrées.</p>
+                            <h4>{t('entreprises.features.quickReplies.title')}</h4>
+                            <p>{t('entreprises.features.quickReplies.text')}</p>
                         </div>
                     </div>
                     <div className="e-feature-item">
                         <div className="e-icon icon-purple"><i className="fa-solid fa-robot"></i></div>
                         <div className="e-feature-text">
-                            <h4>Automatisation & notifications</h4>
-                            <p>Automatisez les réponses, les notifications et les suivis pour ne rien manquer.</p>
+                            <h4>{t('entreprises.features.automation.title')}</h4>
+                            <p>{t('entreprises.features.automation.text')}</p>
                         </div>
                     </div>
                 </div>
                 
                 <div className="e-mockup-center">
-                    <img src="assets/dashboard.png" alt="Platform Dashboard" />
+                    <img src="assets/dashboard.png" alt={t('entreprises.mockup.alt')} />
                 </div>
                 
                 <div className="e-features-right">
                     <div className="e-feature-item">
                         <div className="e-icon icon-cyan"><i className="fa-solid fa-id-card"></i></div>
                         <div className="e-feature-text">
-                            <h4>Profils clients 360°</h4>
-                            <p>Retrouvez l'historique complet et centralisez toutes les données.</p>
+                            <h4>{t('entreprises.features.profiles.title')}</h4>
+                            <p>{t('entreprises.features.profiles.text')}</p>
                         </div>
                     </div>
                     <div className="e-feature-item">
                         <div className="e-icon icon-teal"><i className="fa-solid fa-chart-line"></i></div>
                         <div className="e-feature-text">
-                            <h4>Statistiques avancées</h4>
-                            <p>Suivez vos performances et mesurez la satisfaction client.</p>
+                            <h4>{t('entreprises.features.stats.title')}</h4>
+                            <p>{t('entreprises.features.stats.text')}</p>
                         </div>
                     </div>
                     <div id="securite" className="e-feature-item">
                         <div className="e-icon icon-blue"><i className="fa-solid fa-shield-halved"></i></div>
                         <div className="e-feature-text">
-                            <h4>Sécurité & conformité</h4>
-                            <p>Vos données sont protégées et conformes aux normes RGPD.</p>
+                            <h4>{t('entreprises.features.security.title')}</h4>
+                            <p>{t('entreprises.features.security.text')}</p>
                         </div>
                     </div>
                     <div className="e-feature-item">
                         <div className="e-icon icon-orange"><i className="fa-solid fa-headset"></i></div>
                         <div className="e-feature-text">
-                            <h4>Multi-agents</h4>
-                            <p>Travaillez à plusieurs sur le même compte WhatsApp Business.</p>
+                            <h4>{t('entreprises.features.multiAgents.title')}</h4>
+                            <p>{t('entreprises.features.multiAgents.text')}</p>
                         </div>
                     </div>
                     
                     <div className="e-whatsapp-box">
                         <i className="fa-brands fa-whatsapp icon-green"></i>
                         <div>
-                            <strong>Tout est centralisé.</strong><br />
-                            <strong>Tout est plus simple.</strong><br />
-                            <strong className="highlight-green">Tout se passe sur WhatsApp.</strong>
+                            <strong>{t('entreprises.box.line1')}</strong><br />
+                            <strong>{t('entreprises.box.line2')}</strong><br />
+                            <strong className="highlight-green">{t('entreprises.box.line3')}</strong>
                         </div>
                     </div>
                 </div>
@@ -144,7 +146,7 @@ function Entreprises() {
 
         
         <section className="testimonials-row">
-            <h2>Ils nous font <span className="highlight-green">confiance</span></h2>
+            <h2>{t('entreprises.testimonials.titlePart1')} <span className="highlight-green">{t('entreprises.testimonials.titleHighlight')}</span></h2>
             <TestimonialsCarousel testimonials={testimonials} itemsPerPageDesktop={3} />
         </section>
 
@@ -155,11 +157,11 @@ function Entreprises() {
                     <div className="cta-icon-text">
                         <i className="fa-brands fa-whatsapp banner-large-icon"></i>
                         <div className="cta-banner-text-left">
-                            <h2>Prêt à améliorer vos relations sur WhatsApp ?</h2>
-                            <p>Rejoignez Centrelatio et offrez à vos clients l'expérience qu'ils méritent.</p>
+                            <h2>{t('entreprises.finalCta.title')}</h2>
+                            <p>{t('entreprises.finalCta.text')}</p>
                         </div>
                     </div>
-                    <a href="#contact-form" className="btn btn-white"><i className="fa-brands fa-whatsapp icon-green"></i> Demander une démo maintenant</a>
+                    <a href="#contact-form" className="btn btn-white"><i className="fa-brands fa-whatsapp icon-green"></i> {t('entreprises.finalCta.button')}</a>
                 </div>
             </div>
         </section>

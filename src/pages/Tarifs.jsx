@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LockKeyhole, ShieldCheck, ServerCog, RefreshCcw, Shield } from 'lucide-react';
 import { setPageMeta } from '../lib/seo';
+import { useTranslation } from 'react-i18next'
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
 
 const prices = {
@@ -18,6 +19,7 @@ const prices = {
 }
 
 function Tarifs({ showTestimonials = true }) {
+    const { t } = useTranslation()
     const [billing, setBilling] = useState('monthly');
   const currentPrices = prices[billing];
   const testimonials = [
@@ -68,8 +70,8 @@ function Tarifs({ showTestimonials = true }) {
       
         
         <section className="pricing-header">
-            <h1>Demandez votre <span className="highlight-green">devis personnalisé</span></h1>
-            <p className="section-subtitle">Recevez une proposition adaptée à votre organisation, vos besoins et votre volume de conversations WhatsApp.</p>
+            <h1>{t('tarifs.header.titlePart1')} <span className="highlight-green">{t('tarifs.header.titleHighlight')}</span></h1>
+            <p className="section-subtitle">{t('tarifs.header.subtitle')}</p>
             
             <div className="pricing-toggle">
                 <button
@@ -77,20 +79,18 @@ function Tarifs({ showTestimonials = true }) {
                     className={`toggle-btn ${billing === 'monthly' ? 'active' : 'inactive'}`}
                     onClick={() => setBilling('monthly')}
                 >
-                    Mensuel <br /><small>Sans engagement</small>
+                    {t('tarifs.toggle.monthlyLabel')} <br /><small>{t('tarifs.toggle.monthlyNote')}</small>
                 </button>
                 <button
                     type="button"
                     className={`toggle-btn ${billing === 'yearly' ? 'active' : 'inactive'}`}
                     onClick={() => setBilling('yearly')}
                 >
-                    Annuel <br /><small>Économisez 20%</small>
+                    {t('tarifs.toggle.yearlyLabel')} <br /><small>{t('tarifs.toggle.yearlyNote')}</small>
                 </button>
             </div>
             {billing === 'yearly' && (
-                <p className="pricing-billing-note">
-                    Facturation annuelle avec 20% de réduction inclus.
-                </p>
+                <p className="pricing-billing-note">{t('tarifs.billingNote')}</p>
             )}
         </section>
 
@@ -102,20 +102,20 @@ function Tarifs({ showTestimonials = true }) {
                     <div className="card-header">
                         <div className="icon-circle icon-blue"><i className="fa-regular fa-paper-plane"></i></div>
                         <div>
-                            <h3>Starter</h3>
-                            <p>Pour les petites équipes</p>
+                            <h3>{t('tarifs.plans.starter.title')}</h3>
+                            <p>{t('tarifs.plans.starter.subtitle')}</p>
                         </div>
                     </div>
                     <div className="price">
                         <span className="amount">{currentPrices.starter.amount}</span> <span className="currency">{currentPrices.starter.currency}</span>
                     </div>
-                    <p className="card-desc">Recevez une proposition rapide adaptée aux petites équipes et à vos premiers échanges WhatsApp.</p>
+                    <p className="card-desc">{t('tarifs.plans.starter.desc')}</p>
                     <ul className="features-list">
-                        <li><i className="fa-solid fa-check icon-green"></i> 1 utilisateur</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> 1 numéro WhatsApp</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Réponses rapides</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> FAQ & Messages prédéfinis</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Statistiques de base</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.starter.features.0')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.starter.features.1')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.starter.features.2')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.starter.features.3')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.starter.features.4')}</li>
                     </ul>
                     <a href="#contact-form" className="btn btn-secondary">Demander un devis</a>
                 </div>
@@ -126,21 +126,21 @@ function Tarifs({ showTestimonials = true }) {
                     <div className="card-header">
                         <div className="icon-circle icon-blue"><i className="fa-solid fa-user-group"></i></div>
                         <div>
-                            <h3>Growth</h3>
-                            <p>Pour les équipes en croissance</p>
+                            <h3>{t('tarifs.plans.growth.title')}</h3>
+                            <p>{t('tarifs.plans.growth.subtitle')}</p>
                         </div>
                     </div>
                     <div className="price">
                         <span className="amount">{currentPrices.growth.amount}</span> <span className="currency">{currentPrices.growth.currency}</span>
                     </div>
-                    <p className="card-desc">Obtenez un plan conçu pour accompagner votre croissance et vos volumes WhatsApp.</p>
+                    <p className="card-desc">{t('tarifs.plans.growth.desc')}</p>
                     <ul className="features-list">
-                        <li><i className="fa-solid fa-check icon-green"></i> 3 utilisateurs</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> 3 numéros WhatsApp</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Toutes les fonctionnalités Starter</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Boîte de réception partagée</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Automatisations & Notifications</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Statistiques avancées</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.0')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.1')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.2')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.3')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.4')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.5')}</li>
                     </ul>
                     <a href="#contact-form" className="btn btn-primary">Obtenir mon devis</a>
                 </div>
@@ -150,21 +150,21 @@ function Tarifs({ showTestimonials = true }) {
                     <div className="card-header">
                         <div className="icon-circle icon-green"><i className="fa-regular fa-building"></i></div>
                         <div>
-                            <h3>Business</h3>
-                            <p>Pour les entreprises</p>
+                            <h3>{t('tarifs.plans.business.title')}</h3>
+                            <p>{t('tarifs.plans.business.subtitle')}</p>
                         </div>
                     </div>
                     <div className="price">
                         <span className="amount">{currentPrices.business.amount}</span> <span className="currency">{currentPrices.business.currency}</span>
                     </div>
-                    <p className="card-desc">Recevez une proposition structurée pour des opérations WhatsApp à grande échelle.</p>
+                    <p className="card-desc">{t('tarifs.plans.business.desc')}</p>
                     <ul className="features-list">
-                        <li><i className="fa-solid fa-check icon-green"></i> Utilisateurs illimités</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Numéros WhatsApp illimités</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Toutes les fonctionnalités Growth</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Attribution & Rôles</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Intégrations CRM & API</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Rapports avancés</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.0')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.1')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.2')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.3')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.4')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.5')}</li>
                     </ul>
                     <a href="#contact-form" className="btn btn-secondary green-border">Demander un devis</a>
                 </div>
@@ -174,27 +174,27 @@ function Tarifs({ showTestimonials = true }) {
                     <div className="card-header">
                         <div className="icon-circle icon-green"><i className="fa-solid fa-shield-halved"></i></div>
                         <div>
-                            <h3>Enterprise</h3>
-                            <p>Pour les grandes organisations</p>
+                            <h3>{t('tarifs.plans.enterprise.title')}</h3>
+                            <p>{t('tarifs.plans.enterprise.subtitle')}</p>
                         </div>
                     </div>
                     <div className="price">
                         <span className="amount text-large">Sur devis</span>
                     </div>
-                    <p className="card-desc">Recevez une proposition sur-mesure avec accompagnement, SLA et sécurité avancée.</p>
+                    <p className="card-desc">{t('tarifs.plans.enterprise.desc')}</p>
                     <ul className="features-list">
-                        <li><i className="fa-solid fa-check icon-green"></i> Tout du plan Business</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> SLA & Support prioritaire</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Intégrations sur-mesure</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Formation & Accompagnement</li>
-                        <li><i className="fa-solid fa-check icon-green"></i> Sécurité & Conformité avancées</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.enterprise.features.0')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.enterprise.features.1')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.enterprise.features.2')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.enterprise.features.3')}</li>
+                        <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.enterprise.features.4')}</li>
                     </ul>
                     <a href="#contact-form" className="btn btn-secondary green-border">Recevoir une proposition</a>
                 </div>
             </div>
             
             <div className="pricing-footer-text">
-                <p><i className="fa-solid fa-circle-info icon-green"></i> Tous les plans incluent : 100% WhatsApp officiel • Sécurité des données • Support 24h/7</p>
+                    <p><i className="fa-solid fa-circle-info icon-green"></i> {t('tarifs.footer.includes')}</p>
                 {billing === 'yearly' && <p className="pricing-footer-saving">Vous économisez 20% par rapport au paiement mensuel.</p>}
             </div>
         </section>
@@ -203,33 +203,33 @@ function Tarifs({ showTestimonials = true }) {
         <section className="platform-journey bg-light-section">
             <div className="journey-header">
                 <div className="j-header-text">
-                    <h2>Une plateforme complète <br />pour des <span className="highlight-green">relations durables</span></h2>
-                    <p>Centrelatio vous aide à chaque étape de la relation client, de la première question jusqu'à la fidélisation.</p>
+                    <h2>{t('tarifs.journey.titlePart1')} <br />pour des <span className="highlight-green">{t('tarifs.journey.titleHighlight')}</span></h2>
+                    <p>{t('tarifs.journey.subtitle')}</p>
                 </div>
                 
                 <div className="journey-steps">
                     <div className="j-step">
                         <div className="j-icon icon-green"><i className="fa-solid fa-comment-dots"></i></div>
-                        <h4>Attirer</h4>
-                        <p>De nouveaux clients</p>
+                        <h4>{t('tarifs.journey.steps.attract.title')}</h4>
+                        <p>{t('tarifs.journey.steps.attract.text')}</p>
                     </div>
                     <div className="j-line"></div>
                     <div className="j-step">
                         <div className="j-icon icon-blue"><i className="fa-solid fa-comment-medical"></i></div>
-                        <h4>Engager</h4>
-                        <p>Des conversations utiles</p>
+                        <h4>{t('tarifs.journey.steps.engage.title')}</h4>
+                        <p>{t('tarifs.journey.steps.engage.text')}</p>
                     </div>
                     <div className="j-line"></div>
                     <div className="j-step">
                         <div className="j-icon icon-purple"><i className="fa-solid fa-heart"></i></div>
-                        <h4>Satisfaire</h4>
-                        <p>Avec un support efficace</p>
+                        <h4>{t('tarifs.journey.steps.satisfy.title')}</h4>
+                        <p>{t('tarifs.journey.steps.satisfy.text')}</p>
                     </div>
                     <div className="j-line"></div>
                     <div className="j-step">
                         <div className="j-icon icon-orange"><i className="fa-solid fa-star"></i></div>
-                        <h4>Fidéliser</h4>
-                        <p>Et créer de l'engagement</p>
+                        <h4>{t('tarifs.journey.steps.loyalize.title')}</h4>
+                        <p>{t('tarifs.journey.steps.loyalize.text')}</p>
                     </div>
                 </div>
             </div>
@@ -241,15 +241,15 @@ function Tarifs({ showTestimonials = true }) {
                 <div className="sec-left">
                     <div className="sec-icon-large"><Shield /></div>
                     <div className="sec-text">
-                        <h3><span className="highlight-green">Sécurité</span> et conformité au cœur de notre solution</h3>
-                        <p>Vos données et celles de vos clients sont protégées avec les plus hauts standards de sécurité et conformes aux réglementations en vigueur.</p>
+                        <h3><span className="highlight-green">{t('tarifs.security.titleHighlight')}</span> {t('tarifs.security.titleRest')}</h3>
+                        <p>{t('tarifs.security.description')}</p>
                     </div>
                 </div>
                 <div className="sec-right">
-                    <div className="sec-item"><LockKeyhole /> <span>Chiffrement<br />des données</span></div>
-                    <div className="sec-item"><ShieldCheck /> <span>Conforme<br />RGPD</span></div>
-                    <div className="sec-item"><ServerCog /> <span>Hébergement<br />sécurisé</span></div>
-                    <div className="sec-item"><RefreshCcw /> <span>Sauvegardes<br />quotidiennes</span></div>
+                    <div className="sec-item"><LockKeyhole /> <span>{t('tarifs.security.items.encryption')}</span></div>
+                    <div className="sec-item"><ShieldCheck /> <span>{t('tarifs.security.items.rgpd')}</span></div>
+                    <div className="sec-item"><ServerCog /> <span>{t('tarifs.security.items.hosting')}</span></div>
+                    <div className="sec-item"><RefreshCcw /> <span>{t('tarifs.security.items.backups')}</span></div>
                 </div>
             </div>
         </section>
@@ -257,7 +257,7 @@ function Tarifs({ showTestimonials = true }) {
         
         {showTestimonials && (
           <section className="testimonials-row">
-              <h2>Ils nous font <span className="highlight-green">confiance</span></h2>
+              <h2>{t('tarifs.testimonials.titlePart1')} <span className="highlight-green">{t('tarifs.testimonials.titleHighlight')}</span></h2>
               <TestimonialsCarousel testimonials={testimonials} itemsPerPageDesktop={3} />
           </section>
         )}
@@ -269,11 +269,11 @@ function Tarifs({ showTestimonials = true }) {
                     <div className="cta-icon-text">
                         <i className="fa-brands fa-whatsapp banner-large-icon"></i>
                         <div className="cta-banner-text-left">
-                            <h2>Prêt à transformer vos conversations en relations durables ?</h2>
-                            <p>Rejoignez Centrelatio et rapprochez-vous de vos clients, chaque jour.</p>
+                            <h2>{t('tarifs.finalCta.titlePart1')}</h2>
+                            <p>{t('tarifs.finalCta.text')}</p>
                         </div>
                     </div>
-                    <a href="#contact-form" className="btn btn-white"><i className="fa-brands fa-whatsapp icon-green"></i> Demander une démonstration</a>
+                    <a href="#contact-form" className="btn btn-white"><i className="fa-brands fa-whatsapp icon-green"></i> {t('tarifs.finalCta.button')}</a>
                 </div>
             </div>
         </section>

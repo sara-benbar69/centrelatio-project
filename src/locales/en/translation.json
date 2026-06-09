@@ -229,6 +229,24 @@
   },
   
   "resources": {
+    "hero": {
+      "tag": "RESOURCES",
+      "titlePart1": "Resources to better manage",
+      "titleHighlight": "your relationships on WhatsApp",
+      "subtitle": "Guides, webinars, blog and best practices to help you centralize conversations, respond faster and create a smoother customer experience."
+    },
+    "badges": {
+      "guides": "Guides",
+      "webinars": "Webinars",
+      "blog": "Blog",
+      "bestPractices": "Best practices"
+    },
+    "cards": {
+      "guides": { "title": "Practical guides", "text": "Simple guides to better use WhatsApp Business and structure your customer relationship.", "link": "Read the guides" },
+      "webinars": { "title": "Webinars", "text": "Online sessions to discover best practices and ask our experts questions.", "link": "See the webinars" },
+      "blog": { "title": "Blog", "text": "Tips, trends and case studies to develop a lasting customer relationship.", "link": "Read the blog" },
+      "bestPractices": { "title": "Best practices", "text": "Concrete methods to respond faster, retain customers and turn every conversation into value.", "link": "Explore" }
+    },
     "faqTitle": {
       "part1": "Frequently",
       "part2": "asked questions"
@@ -416,5 +434,120 @@
         ]
       }
     ]
+  }
+  ,
+  "tarifs": {
+    "header": {
+      "titlePart1": "Request your",
+      "titleHighlight": "personalized quote",
+      "subtitle": "Receive a proposal tailored to your organization, needs and your volume of WhatsApp conversations."
+    },
+    "toggle": {
+      "monthlyLabel": "Monthly",
+      "monthlyNote": "No commitment",
+      "yearlyLabel": "Yearly",
+      "yearlyNote": "Save 20%"
+    },
+    "billingNote": "Annual billing with 20% discount included.",
+    "plans": {
+      "starter": {
+        "title": "Starter",
+        "subtitle": "For small teams",
+        "desc": "Get a quick proposal tailored to small teams and your first WhatsApp exchanges.",
+        "features": ["1 user","1 WhatsApp number","Quick replies","FAQ & canned messages","Basic analytics"]
+      },
+      "growth": {
+        "title": "Growth",
+        "subtitle": "For growing teams",
+        "desc": "A plan designed to support your growth and WhatsApp volumes.",
+        "features": ["3 users","3 WhatsApp numbers","All Starter features","Shared inbox","Automations & Notifications","Advanced analytics"]
+      },
+      "business": {
+        "title": "Business",
+        "subtitle": "For businesses",
+        "desc": "Receive a structured proposal for large-scale WhatsApp operations.",
+        "features": ["Unlimited users","Unlimited WhatsApp numbers","All Growth features","Attribution & Roles","CRM & API integrations","Advanced reporting"]
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "subtitle": "For large organizations",
+        "desc": "Receive a tailor-made proposal with support, SLA and advanced security.",
+        "features": ["All Business features","SLA & Priority support","Custom integrations","Training & Onboarding","Advanced security & compliance"]
+      }
+    },
+    "footer": {
+      "includes": "All plans include: 100% official WhatsApp • Data security • 24/7 support"
+    },
+    "journey": {
+      "titlePart1": "A complete platform",
+      "titleHighlight": "for lasting relationships",
+      "subtitle": "Centrelatio helps you at every stage of the customer relationship, from first question to retention.",
+      "steps": {
+        "attract": { "title": "Attract", "text": "New customers" },
+        "engage": { "title": "Engage", "text": "Meaningful conversations" },
+        "satisfy": { "title": "Satisfy", "text": "With effective support" },
+        "loyalize": { "title": "Retain", "text": "And build engagement" }
+      }
+    },
+    "security": {
+      "titleHighlight": "Security",
+      "titleRest": "and compliance at the heart of our solution",
+      "description": "Your data and your customers' data are protected with the highest security standards and comply with applicable regulations.",
+      "items": {
+        "encryption": "Encryption\nof data",
+        "rgpd": "RGPD\nCompliant",
+        "hosting": "Secure\nhosting",
+        "backups": "Daily\nbackups"
+      }
+    },
+    "testimonials": {
+      "titlePart1": "They",
+      "titleHighlight": "trust us"
+    },
+    "finalCta": {
+      "titlePart1": "Ready to transform your conversations into",
+      "text": "Join Centrelatio and get closer to your customers every day.",
+      "button": "Request a demo"
+    }
+  },
+  "entreprises": {
+    "header": {
+      "titlePart1": "For businesses, retailers",
+      "titleHighlight": "and institutions",
+      "subtitle": "Centralize all your WhatsApp conversations, collaborate as a team and deliver an exceptional customer experience."
+    },
+    "features": {
+      "inbox": { "title": "Shared inbox", "text": "All your WhatsApp conversations in a single dashboard." },
+      "assign": { "title": "Attribution & collaboration", "text": "Assign conversations and collaborate in real time with your team." },
+      "quickReplies": { "title": "Quick replies", "text": "Save time with reply templates and pre-saved FAQs." },
+      "automation": { "title": "Automation & notifications", "text": "Automate replies, notifications and follow-ups so nothing is missed." },
+      "profiles": { "title": "360° customer profiles", "text": "Access full history and centralize all data." },
+      "stats": { "title": "Advanced analytics", "text": "Track your performance and measure customer satisfaction." },
+      "security": { "title": "Security & compliance", "text": "Your data is protected and compliant with GDPR standards." },
+      "multiAgents": { "title": "Multi-agents", "text": "Work together on the same WhatsApp Business account." }
+    },
+    "mockup": { "alt": "Platform Dashboard" },
+    "box": { "line1": "Everything is centralized.", "line2": "Everything is simpler.", "line3": "Everything happens on WhatsApp." },
+    "testimonials": { "titlePart1": "They", "titleHighlight": "trust us" },
+    "finalCta": { "title": "Ready to improve your relationships on WhatsApp?", "text": "Join Centrelatio and give your customers the experience they deserve.", "button": "Request a demo now" }
+  },
+  "contact": {
+    "cta": {
+      "titlePart1": "Ready to transform your conversations into",
+      "titleHighlight": "lasting relationships?",
+      "subtitle": "Request a demo and discover how Centrelatio can simplify your customer relationship on WhatsApp.",
+      "badges": ["100% WhatsApp","No app needed","Fast response"]
+    },
+    "formTitle": "Request a demo",
+    "form": {
+      "namePlaceholder": "Full name",
+      "emailPlaceholder": "Work email",
+      "companyPlaceholder": "Company",
+      "whatsappPlaceholder": "WhatsApp number",
+      "selectPlaceholder": "Main need",
+      "options": { "relation": "Customer relationship", "support": "Support / Customer Care", "promotions": "Promotions", "loyalty": "Loyalty" },
+      "ariaLabel": "Send demo request"
+    },
+    "button": { "sending": "Sending...", "submit": "Send request" }
   }
 }
