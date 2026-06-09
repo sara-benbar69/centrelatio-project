@@ -1,37 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../hooks/useMediaQuery';
-
-const footerGroups = [
-  {
-    title: 'Plateforme',
-    links: [
-      { label: 'Fonctionnalites', to: '/#fonctionnalites' },
-      { label: 'Tarifs', to: '/tarifs' },
-      { label: 'Integrations', to: '/entreprises#integrations' },
-      { label: 'Securite', to: '/entreprises#securite' },
-    ],
-  },
-  {
-    title: 'Pour les entreprises',
-    links: [
-      { label: 'Aperçu', to: '/entreprises' },
-      { label: "Cas d'usage", to: '/entreprises#cas-usage' },
-      { label: 'Ressources', to: '/ressources' },
-      { label: 'FAQ', to: '/ressources#faq' },
-    ],
-  },
-  {
-    title: 'Ressources',
-    links: [
-      { label: 'Blog', to: '/ressources' },
-      { label: 'Guides', to: '/ressources' },
-      { label: "Centre d'aide", to: '/ressources' },
-    ],
-  },
-];
+import '../i18n';
 
 function Footer() {
+  const { t } = useTranslation();
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const footerGroups = t('footer.groups', { returnObjects: true });
+  const legalLinks = t('footer.legalLinks', { returnObjects: true });
 
   const footerBrand = (
     <div className="footer-brand footer-logo">
@@ -40,21 +16,18 @@ function Footer() {
         alt="Centrelatio"
         className="footer-logo-img"
       />
-      <p>
-        La plateforme WhatsApp qui met en relation les clients
-        avec les entreprises, retailers et institutions.
-      </p>
+      <p>{t('footer.brandDescription')}</p>
       <div className="social-links-left">
-        <a href="#" aria-label="WhatsApp">
+        <a href="#" aria-label={t('footer.whatsappLabel')}>
           <i className="fa-brands fa-whatsapp"></i>
         </a>
-        <a href="#" aria-label="Facebook">
+        <a href="#" aria-label={t('footer.facebookLabel')}>
           <i className="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="#" aria-label="LinkedIn">
+        <a href="#" aria-label={t('footer.linkedinLabel')}>
           <i className="fa-brands fa-linkedin-in"></i>
         </a>
-        <a href="#" aria-label="Instagram">
+        <a href="#" aria-label={t('footer.instagramLabel')}>
           <i className="fa-brands fa-instagram"></i>
         </a>
       </div>
@@ -76,15 +49,15 @@ function Footer() {
           </div>
         ))}
         <div>
-          <h4>Contact</h4>
-          <a href="mailto:contact@centrelatio.com">
-            <i className="fa-regular fa-envelope"></i> contact@centrelatio.com
+          <h4>{t('footer.contactTitle')}</h4>
+          <a href={`mailto:${t('footer.emailLabel')}`}>
+            <i className="fa-regular fa-envelope"></i> {t('footer.emailLabel')}
           </a>
-          <a href="tel:+212600000000">
-            <i className="fa-solid fa-phone"></i> +212 6 00 00 00 00
+          <a href={`tel:+212600000000`}>
+            <i className="fa-solid fa-phone"></i> {t('footer.phoneLabel')}
           </a>
           <span className="footer-contact-line">
-            <i className="fa-solid fa-location-dot"></i> Casablanca, Maroc
+            <i className="fa-solid fa-location-dot"></i> {t('footer.locationLabel')}
           </span>
         </div>
       </div>
@@ -108,11 +81,11 @@ function Footer() {
           </details>
         ))}
         <details>
-          <summary>Contact</summary>
+          <summary>{t('footer.contactTitle')}</summary>
           <div>
-            <a href="mailto:contact@centrelatio.com">contact@centrelatio.com</a>
-            <a href="tel:+212600000000">+212 6 00 00 00 00</a>
-            <Link to="/#contact-form">Casablanca, Maroc</Link>
+            <a href={`mailto:${t('footer.emailLabel')}`}>{t('footer.emailLabel')}</a>
+            <a href={`tel:+212600000000`}>{t('footer.phoneLabel')}</a>
+            <Link to="/#contact-form">{t('footer.locationLabel')}</Link>
           </div>
         </details>
       </div>
@@ -127,17 +100,19 @@ function Footer() {
 
       <div className="footer-bottom">
         <p className="copyright">
-          &copy; 2026 <strong>Centrelatio</strong>{' '}
-          <span className="by-digishare">by Digishare</span>. Tous droits réservés.
+          {t('footer.copyrightPrefix')} <strong>Centrelatio</strong>{' '}
+          <span className="by-digishare">{t('footer.copyrightBy')}</span>. {t('footer.copyrightSuffix')}
         </p>
         <div className="legal-links">
-          <a href="#">Mentions legales</a>
-          <a href="#">Politique de confidentialite</a>
-          <a href="#">Conditions d'utilisation</a>
+          {legalLinks.map((link) => (
+            <a key={link.label} href={link.href}>
+              {link.label}
+            </a>
+          ))}
         </div>
       </div>
 
-      <a href="#" className="floating-whatsapp" aria-label="WhatsApp">
+      <a href="#" className="floating-whatsapp" aria-label={t('footer.whatsappLabel')}>
         <i className="fa-brands fa-whatsapp"></i>
       </a>
     </footer>

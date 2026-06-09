@@ -1,0 +1,230 @@
+{
+  "common": {
+    "language": "fr",
+    "siteTitle": "Centrelatio"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "enterprises": "Entreprises",
+    "pricing": "Tarifs",
+    "resources": "Ressources",
+    "requestDemo": "Demander une démo",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": {
+      "label": "Langue",
+      "fr": "FR",
+      "en": "EN"
+    }
+  },
+  "footer": {
+    "brandDescription": "La plateforme WhatsApp qui met en relation les clients avec les entreprises.",
+    "whatsappLabel": "WhatsApp",
+    "facebookLabel": "Facebook",
+    "linkedinLabel": "LinkedIn",
+    "instagramLabel": "Instagram",
+    "contactTitle": "Contact",
+    "emailLabel": "contact@centrelatio.com",
+    "phoneLabel": "+212 6 00 00 00 00",
+    "locationLabel": "Casablanca, Maroc",
+    "copyright": "© 2026 Centrelatio. Tous droits réservés.",
+    "legalLinks": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Politique de confidentialité", "href": "#" },
+      { "label": "Conditions d'utilisation", "href": "#" }
+    ],
+    "copyrightPrefix": "© 2026",
+    "copyrightBy": "by Digishare",
+    "copyrightSuffix": "Tous droits réservés.",
+    "groups": [
+      {
+        "title": "Plateforme",
+        "links": [
+          { "label": "Fonctionnalités", "to": "/#fonctionnalites" },
+          { "label": "Tarifs", "to": "/tarifs" },
+          { "label": "Intégrations", "to": "/entreprises#integrations" },
+          { "label": "Sécurité", "to": "/entreprises#securite" }
+        ]
+      },
+      {
+        "title": "Pour les entreprises",
+        "links": [
+          { "label": "Aperçu", "to": "/entreprises" },
+          { "label": "Cas d'usage", "to": "/entreprises#cas-usage" },
+          { "label": "Ressources", "to": "/ressources" },
+          { "label": "FAQ", "to": "/ressources#faq" }
+        ]
+      },
+      {
+        "title": "Ressources",
+        "links": [
+          { "label": "Blog", "to": "/ressources" },
+          { "label": "Guides", "to": "/ressources" },
+          { "label": "Centre d'aide", "to": "/ressources" }
+        ]
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "tag": "WhatsApp Business",
+      "titlePart1": "Le centre de toutes vos relations",
+      "titlePart2": "sur WhatsApp",
+      "subtitle": "Centrelatio met en relation vos clients et vos entreprises pour des échanges simples, rapides et efficaces.",
+      "cta": "Démarrer maintenant",
+      "features": [
+        "100% WhatsApp",
+        "Sans application",
+        "Réponse 24h/7",
+        "Securise"
+      ]
+    },
+    "useCases": {
+      "title": "Toutes vos interactions,",
+      "titleHighlight": "centralisees sur WhatsApp",
+      "subtitle": "Un seul canal pour répondre à tous les besoins de vos clients et développer des relations durables.",
+      "cards": [
+        {
+          "iconColor": "blue",
+          "iconSrc": "/assets/faq.png",
+          "iconAlt": "FAQ",
+          "title": "FAQ",
+          "desc": "Repondez instantanement aux questions frequentes."
+        },
+        {
+          "iconColor": "green",
+          "iconSrc": "/assets/Ecomerce.png",
+          "iconAlt": "Ecommerce",
+          "title": "Produits & Services",
+          "desc": "Presentez vos offres et aidez vos clients a choisir."
+        },
+        {
+          "iconColor": "blue",
+          "iconSrc": "/assets/information.png",
+          "iconAlt": "information",
+          "title": "Demande d'informations",
+          "desc": "Collectez facilement les demandes d'informations."
+        },
+        {
+          "iconColor": "green",
+          "iconSrc": "/assets/service.png",
+          "iconAlt": "service",
+          "title": "Support / SAV",
+          "desc": "Assurez un support rapide et efficace."
+        },
+        {
+          "iconColor": "orange",
+          "iconSrc": "/assets/reclamation.png",
+          "iconAlt": "reclamation",
+          "title": "Reclamations",
+          "desc": "Recevez et traitez les reclamations simplement."
+        },
+        {
+          "iconColor": "yellow",
+          "iconSrc": "/assets/light.png",
+          "iconAlt": "light",
+          "title": "Boite a idees",
+          "desc": "Recueillez les idees et suggestions de vos clients."
+        },
+        {
+          "iconColor": "purple",
+          "iconSrc": "/assets/star.png",
+          "iconAlt": "star",
+          "title": "Avis clients",
+          "desc": "Collectez les avis et ameliorez votre reputation."
+        },
+        {
+          "iconColor": "cyan",
+          "iconSrc": "/assets/gift.png",
+          "iconAlt": "gift",
+          "title": "Fidélité & Récompenses",
+          "desc": "Créez des programmes de fidélité qui engagent."
+        },
+        {
+          "iconColor": "pink",
+          "iconSrc": "/assets/promotion.png",
+          "iconAlt": "promotion",
+          "title": "Promotions",
+          "desc": "Envoyez des offres et promotions ciblees via WhatsApp."
+        },
+        {
+          "iconColor": "teal",
+          "iconSrc": "/assets/notification.png",
+          "iconAlt": "notification",
+          "title": "Notifications",
+          "desc": "Informez vos clients en temps reel (commandes, alertes, etc.)."
+        }
+      ],
+      "highlightCard": {
+        "title": "Tout ça, depuis WhatsApp.",
+        "desc": "Sans application supplémentaire pour vos clients. Simple, rapide, efficace."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ca fonctionne ?",
+      "steps": [
+        {
+          "number": "1",
+          "iconSrc": "/assets/qr.png",
+          "iconAlt": "QR",
+          "title": "Connectez",
+          "text": "Scannez le QR code ou cliquez sur le lien pour démarrer la conversation."
+        },
+        {
+          "number": "2",
+          "iconSrc": "/assets/whatsap.png",
+          "iconAlt": "WhatsApp",
+          "title": "Échangez",
+          "text": "Vos clients vous écrivent sur WhatsApp comme d'habitude."
+        },
+        {
+          "number": "3",
+          "iconSrc": "/assets/centraliser.png",
+          "iconAlt": "centraliser",
+          "title": "Centralisez",
+          "text": "Centrelatio regroupe toutes les conversations dans un tableau de bord unique."
+        },
+        {
+          "number": "4",
+          "iconSrc": "/assets/diagrame.png",
+          "iconAlt": "Diagramme",
+          "title": "Gerez & Fidelisez",
+          "text": "Répondez plus vite, satisfaites vos clients et développez votre relation."
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Pourquoi choisir",
+      "titleHighlight": "Centrelatio ?",
+      "items": [
+        {
+          "title": "Améliorez l'expérience client",
+          "text": "Réponses rapides et personnalisées."
+        },
+        {
+          "title": "Gagnez du temps",
+          "text": "Centralisation et automatisation des échanges."
+        },
+        {
+          "title": "Boostez la fidélité",
+          "text": "Programmes, promotions et relation durable."
+        },
+        {
+          "title": "Outils simples & puissants",
+          "text": "Tableau de bord intuitif et collaboration en équipe."
+        },
+        {
+          "title": "Securite & conformite",
+          "text": "Vos donnees sont protegees et conformes."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Prêt à transformer vos conversations en relations durables ?",
+      "text": "Rejoignez Centrelatio et rapprochez-vous de vos clients, chaque jour.",
+      "button": "Demander une démonstration",
+      "guarantee": "Réponse rapide garantie"
+    }
+  }
+}
