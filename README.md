@@ -117,7 +117,7 @@ CENTRELATIO/
 | /entreprises | Présentation des services entreprises |
 | /tarifs      | Présentation des offres et tarifs     |
 | /ressources  | Demande de ressources                 |
-| /contact     | Formulaire de contact                 |
+
 
 ---
 

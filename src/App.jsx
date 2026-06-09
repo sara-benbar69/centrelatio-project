@@ -8,7 +8,6 @@ const Landing = lazy(() => import('./pages/Landing'))
 const Tarifs = lazy(() => import('./pages/Tarifs'))
 const Ressources = lazy(() => import('./pages/Ressources'))
 const Entreprises = lazy(() => import('./pages/Entreprises'))
-const Contact = lazy(() => import('./pages/Contact'))
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
             <Route path="/entreprises" element={<Entreprises />} />
             <Route path="/tarifs" element={<Tarifs showTestimonials={false} />} />
             <Route path="/ressources" element={<Ressources />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>
       </div>
