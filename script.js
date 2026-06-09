@@ -41,37 +41,52 @@ document.addEventListener('DOMContentLoaded', () => {
     /* =========================================
        3. FAQ ACCORDIONS
        ========================================= */
-    const accordions = document.querySelectorAll('.faq-item, .accordion');
+    const accordions = document.querySelectorAll('.accordion, .faq-item:not([data-react-faq])');
     
     accordions.forEach(acc => {
         acc.addEventListener('click', function() {
-            // Toggle active state
-            this.classList.toggle('active');
-            
-            // Get the content element (assume it's the next sibling or a child)
-            const content = this.querySelector('.faq-answer, .accordion-content');
-            if (content) {
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
+                // Toggle active state
+                this.classList.toggle('active');
+
+                // Manage ARIA for accessibility
+                const isActive = this.classList.contains('active');
+                this.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+
+                // Get the content element (assume it's the next sibling or a child)
+                const content = this.querySelector('.faq-answer, .accordion-content');
+                if (content) {
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.setAttribute('aria-hidden', 'true');
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        content.setAttribute('aria-hidden', 'false');
+                    }
                 }
-            }
-            
-            // Toggle icon
-            const icon = this.querySelector('.fa-chevron-down, .fa-chevron-up, .fa-plus, .fa-minus');
-            if (icon) {
-                if (icon.classList.contains('fa-chevron-down')) {
-                    icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
-                } else if (icon.classList.contains('fa-chevron-up')) {
-                    icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
-                } else if (icon.classList.contains('fa-plus')) {
-                    icon.classList.replace('fa-plus', 'fa-minus');
-                } else if (icon.classList.contains('fa-minus')) {
-                    icon.classList.replace('fa-minus', 'fa-plus');
+
+                // Toggle icon
+                const icon = this.querySelector('.fa-chevron-down, .fa-chevron-up, .fa-plus, .fa-minus');
+                if (icon) {
+                    if (icon.classList.contains('fa-chevron-down')) {
+                        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else if (icon.classList.contains('fa-chevron-up')) {
+                        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    } else if (icon.classList.contains('fa-plus')) {
+                        icon.classList.replace('fa-plus', 'fa-minus');
+                    } else if (icon.classList.contains('fa-minus')) {
+                        icon.classList.replace('fa-minus', 'fa-plus');
+                    }
                 }
-            }
-        });
+            });
+
+            // Make the item keyboard-accessible (Enter / Space)
+            acc.setAttribute('tabindex', acc.getAttribute('tabindex') || '0');
+            acc.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
     });
 
     /* =========================================
