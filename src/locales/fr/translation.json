@@ -226,5 +226,194 @@
       "button": "Demander une démonstration",
       "guarantee": "Réponse rapide garantie"
     }
+  },
+  "resources": {
+    "faqTitle": {
+      "part1": "Questions",
+      "part2": "fréquentes"
+    },
+    "faqCategories": [
+      {
+        "category": "À propos de Centrelatio",
+        "items": [
+          {
+            "q": "Qu'est-ce que Centrelatio ?",
+            "a": "Centrelatio est une plateforme de relation client sur WhatsApp qui permet aux entreprises, retailers et institutions de centraliser leurs échanges avec leurs clients, prospects et usagers.\n\nSelon vos besoins, Centrelatio peut être déployé sur votre propre compte WhatsApp Business Platform ou via le Portail Client Mutualisé Centrelatio, permettant un démarrage rapide sans création immédiate de compte WhatsApp API."
+          },
+          {
+            "q": "À qui s'adresse Centrelatio ?",
+            "a": "Centrelatio s'adresse aux :\n\n• Retailers\n• Banques\n• Assurances\n• Établissements de santé\n• Administrations\n• Établissements scolaires\n• Hôtels\n• E-commerçants\n• Réseaux de franchises\n• Associations\n\nToute organisation souhaitant améliorer sa relation client sur WhatsApp."
+          },
+          {
+            "q": "Faut-il installer une application pour utiliser Centrelatio ?",
+            "a": "Non.\n\nVos clients utilisent simplement WhatsApp, sans téléchargement supplémentaire.\n\nQue vous utilisiez votre propre compte WhatsApp Business Platform ou le Portail Client Mutualisé Centrelatio, l'expérience reste identique pour l'utilisateur final."
+          },
+          {
+            "q": "Pourquoi utiliser WhatsApp comme canal de relation client ?",
+            "a": "WhatsApp est aujourd'hui l'un des canaux les plus utilisés au monde.\n\nIl offre :\n\n• Des taux d'ouverture très élevés\n• Une expérience familière pour les utilisateurs\n• Des échanges instantanés\n• Une forte adoption sur mobile"
+          },
+          {
+            "q": "Pourquoi ne pas utiliser simplement un téléphone WhatsApp ?",
+            "a": "Parce que Centrelatio permet :\n\n• L'automatisation\n• La collaboration\n• Le suivi des demandes\n• Les statistiques\n• Les enquêtes\n• Les réclamations\n• Les notifications\n• Les intégrations métiers\n\nTout en conservant la simplicité de WhatsApp."
+          },
+          {
+            "q": "Quelle différence entre Centrelatio et un chatbot ?",
+            "a": "Centrelatio n'est pas uniquement un chatbot.\n\nC'est une plateforme complète de relation client qui combine :\n\n• Automatisation\n• Collaboration humaine\n• Notifications\n• Support\n• Réclamations\n• Fidélité\n• Intégrations métiers\n\navec la possibilité de démarrer rapidement via le Portail Client Mutualisé ou d'évoluer vers un déploiement entièrement dédié."
+          }
+        ]
+      },
+      {
+        "category": "Fonctionnalités",
+        "items": [
+          {
+            "q": "Que peuvent faire mes clients via Centrelatio ?",
+            "a": "Vos clients peuvent :\n\n• Poser des questions\n• Découvrir vos produits et services\n• Demander des informations\n• Faire une réclamation\n• Solliciter le support\n• Donner leur avis\n• Participer à une enquête\n• S'inscrire à un programme de fidélité\n• Recevoir des notifications\n• Demander un rendez-vous\n\nCes parcours peuvent être déployés aussi bien dans le Portail Client Mutualisé que dans un environnement dédié."
+          },
+          {
+            "q": "Puis-je présenter mes produits et services sur WhatsApp ?",
+            "a": "Oui.\n\nCentrelatio permet de créer des parcours conversationnels guidés pour présenter vos produits, services, offres et catalogues.\n\nCette fonctionnalité est disponible dès le Portail Client Mutualisé, ce qui permet de tester rapidement l'intérêt du canal WhatsApp avant un déploiement complet."
+          },
+          {
+            "q": "Puis-je automatiser certaines réponses ?",
+            "a": "Oui.\n\nVous pouvez automatiser :\n\n• FAQ\n• Orientation des demandes\n• Qualification de prospects\n• Enquêtes de satisfaction\n• Réclamations\n• Notifications\n• Programmes de fidélité simples\n\nCes automatisations sont disponibles dès le Portail Client Mutualisé."
+          },
+          {
+            "q": "Puis-je transférer une conversation à un conseiller ?",
+            "a": "Oui, lorsque Centrelatio est déployé sur votre propre compte WhatsApp Business Platform.\n\nLe Portail Client Mutualisé est principalement conçu pour les parcours automatisés et ne propose pas de Live Chat direct avec vos équipes."
+          },
+          {
+            "q": "Puis-je gérer plusieurs collaborateurs ?",
+            "a": "Oui.\n\nAvec un déploiement dédié, plusieurs utilisateurs peuvent collaborer sur les conversations, avec différents rôles et niveaux d'accès."
+          }
+        ]
+      },
+      {
+        "category": "Support & Réclamations",
+        "items": [
+          {
+            "q": "Puis-je gérer les réclamations clients ?",
+            "a": "Oui.\n\nCentrelatio permet de mettre en place des parcours dédiés aux réclamations.\n\nDans le Portail Client Mutualisé, les réclamations peuvent être collectées et qualifiées automatiquement.\n\nDans un déploiement dédié, elles peuvent également être assignées, suivies et traitées par vos équipes."
+          },
+          {
+            "q": "Puis-je suivre l'historique complet d'un client ?",
+            "a": "Oui.\n\nLe déploiement dédié offre une vision complète des interactions et de l'historique client."
+          },
+          {
+            "q": "Puis-je mesurer la satisfaction client ?",
+            "a": "Oui.\n\nCentrelatio permet de déployer :\n\n• Sondages\n• Enquêtes de satisfaction\n• Collecte d'avis\n\nCes fonctionnalités sont également disponibles dans le Portail Client Mutualisé."
+          }
+        ]
+      },
+      {
+        "category": "Marketing & Fidélité",
+        "items": [
+          {
+            "q": "Puis-je envoyer des promotions sur WhatsApp ?",
+            "a": "Oui.\n\nVous pouvez envoyer des campagnes promotionnelles conformément aux règles de WhatsApp Business Platform."
+          },
+          {
+            "q": "Puis-je créer un programme de fidélité ?",
+            "a": "Oui.\n\nCentrelatio permet de communiquer :\n\n• Soldes de points\n• Récompenses\n• Offres personnalisées\n• Avantages membres\n\nDes versions simplifiées peuvent être mises en œuvre via le Portail Client Mutualisé."
+          },
+          {
+            "q": "Puis-je segmenter mes contacts ?",
+            "a": "Oui.\n\nLe déploiement dédié permet des segmentations avancées et des campagnes ciblées."
+          }
+        ]
+      },
+      {
+        "category": "Notifications",
+        "items": [
+          {
+            "q": "Quels types de notifications puis-je envoyer ?",
+            "a": "Par exemple :\n\n• Confirmation de commande\n• Confirmation de rendez-vous\n• Rappel de rendez-vous\n• Statut de livraison\n• Paiement reçu\n• Renouvellement d'abonnement\n• Alertes importantes\n• Documents disponibles"
+          },
+          {
+            "q": "Les notifications sont-elles automatiques ?",
+            "a": "Oui.\n\nElles peuvent être déclenchées par vos systèmes ou intégrations métiers."
+          }
+        ]
+      },
+      {
+        "category": "Intégrations",
+        "items": [
+          {
+            "q": "Centrelatio peut-il se connecter à mon CRM ?",
+            "a": "Oui.\n\nLe déploiement dédié permet des intégrations avec :\n\n• Salesforce\n• HubSpot\n• Zoho\n• Microsoft Dynamics\n• CRM propriétaires"
+          },
+          {
+            "q": "Peut-on connecter Centrelatio à un ERP ?",
+            "a": "Oui.\n\nERP, logiciels métiers et applications internes peuvent être connectés via API ou webhooks."
+          },
+          {
+            "q": "Disposez-vous d'API ?",
+            "a": "Oui.\n\nCentrelatio expose des API et webhooks permettant une intégration complète à votre système d'information."
+          },
+          {
+            "q": "Puis-je connecter mon site e-commerce ?",
+            "a": "Oui.\n\nShopify, WooCommerce, Magento, PrestaShop et d'autres plateformes peuvent être intégrés."
+          }
+        ]
+      },
+      {
+        "category": "WhatsApp Business",
+        "items": [
+          {
+            "q": "Ai-je besoin d'un compte WhatsApp Business Platform ?",
+            "a": "Pas nécessairement pour commencer.\n\nVous pouvez :\n\n• Démarrer rapidement via le Portail Client Mutualisé Centrelatio\n• Déployer Centrelatio sur votre propre compte WhatsApp Business Platform pour bénéficier de toutes les fonctionnalités avancées."
+          },
+          {
+            "q": "Pouvez-vous nous accompagner dans la création du compte ?",
+            "a": "Oui.\n\nNous accompagnons nos clients dans :\n\n• La création du compte\n• La vérification Meta\n• La configuration\n• Les templates\n• La mise en production"
+          },
+          {
+            "q": "Puis-je conserver mon numéro actuel ?",
+            "a": "Dans la plupart des cas, oui."
+          }
+        ]
+      },
+      {
+        "category": "Déploiement & Facturation",
+        "items": [
+          {
+            "q": "Existe-t-il une période d'essai ?",
+            "a": "Oui.\n\nSelon votre projet, nous pouvons mettre en place une démonstration ou un pilote.\n\nDe nombreuses entreprises choisissent de commencer par le Portail Client Mutualisé Centrelatio, qui permet de lancer rapidement des parcours automatisés sans projet technique complexe."
+          },
+          {
+            "q": "Pourquoi commencer par le Portail Client Mutualisé ?",
+            "a": "Parce qu'il permet de :\n\n• Tester l'efficacité de WhatsApp\n• Déployer rapidement des FAQ\n• Mettre en place un bot de présentation des produits et services\n• Lancer des enquêtes de satisfaction via QR Code\n• Collecter des demandes d'informations\n• Gérer des réclamations automatisées\n• Tester des programmes de fidélité simples\n\navant d'investir dans un compte WhatsApp Business Platform dédié."
+          },
+          {
+            "q": "Quelle est la différence entre le Portail Client Mutualisé et un déploiement dédié ?",
+            "a": "Le Portail Client Mutualisé est idéal pour démarrer rapidement et tester le canal WhatsApp.\n\nLe déploiement dédié ajoute notamment :\n\n• Votre propre numéro WhatsApp\n• Live Chat avec agents\n• Collaboration multi-agents\n• Historique client avancé\n• CRM intégré\n• Intégrations ERP\n• Reporting avancé\n• Automatisations sur mesure\n• Contrôle complet de l'expérience client"
+          },
+          {
+            "q": "Comment fonctionne la facturation ?",
+            "a": "La tarification dépend notamment :\n\n• Du mode de déploiement (Portail Mutualisé ou Compte Dédié)\n• Du nombre d'utilisateurs\n• Des fonctionnalités activées\n• Des intégrations souhaitées\n• Du volume de notifications et conversations"
+          },
+          {
+            "q": "Combien de temps faut-il pour démarrer ?",
+            "a": "Le Portail Client Mutualisé peut généralement être mis en place en quelques jours.\n\nUn déploiement complet sur votre propre compte WhatsApp Business Platform peut nécessiter quelques jours à quelques semaines selon la complexité du projet."
+          }
+        ]
+      },
+      {
+        "category": "Sécurité & Confidentialité",
+        "items": [
+          {
+            "q": "Les données sont-elles sécurisées ?",
+            "a": "Oui.\n\nCentrelatio applique les meilleures pratiques de sécurité et de protection des données."
+          },
+          {
+            "q": "Qui a accès aux conversations ?",
+            "a": "Seuls les utilisateurs autorisés de votre organisation disposent d'un accès aux conversations."
+          },
+          {
+            "q": "Les données m'appartiennent-elles ?",
+            "a": "Oui.\n\nVous restez propriétaire de vos données et de votre relation client."
+          }
+        ]
+      }
+    ]
   }
 }

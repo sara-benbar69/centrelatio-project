@@ -226,5 +226,194 @@
       "button": "Request a demo",
       "guarantee": "Fast response guaranteed"
     }
+  },
+  "resources": {
+    "faqTitle": {
+      "part1": "Frequently",
+      "part2": "asked questions"
+    },
+    "faqCategories": [
+      {
+        "category": "About Centrelatio",
+        "items": [
+          {
+            "q": "What is Centrelatio?",
+            "a": "Centrelatio is a WhatsApp customer relationship platform that enables businesses, retailers and institutions to centralize exchanges with customers, prospects and users.\n\nDepending on your needs, Centrelatio can be deployed on your own WhatsApp Business Platform account or via the Centrelatio Shared Client Portal, allowing a quick start without immediate creation of a WhatsApp API account."
+          },
+          {
+            "q": "Who is Centrelatio for?",
+            "a": "Centrelatio is designed for :\n\n• Retailers\n• Banks\n• Insurance companies\n• Healthcare institutions\n• Government agencies\n• Schools\n• Hotels\n• E-commerce merchants\n• Franchise networks\n• Associations\n\nAny organization looking to improve its customer relationship on WhatsApp."
+          },
+          {
+            "q": "Do I need to install an app to use Centrelatio?",
+            "a": "No.\n\nYour customers simply use WhatsApp, with no additional download.\n\nWhether you use your own WhatsApp Business Platform account or the Centrelatio Shared Client Portal, the end user experience remains the same."
+          },
+          {
+            "q": "Why use WhatsApp as a customer relationship channel?",
+            "a": "WhatsApp is one of the most widely used channels in the world today.\n\nIt offers :\n\n• Very high open rates\n• A familiar experience for users\n• Instant exchanges\n• Strong mobile adoption"
+          },
+          {
+            "q": "Why not use just a WhatsApp phone?",
+            "a": "Because Centrelatio enables :\n\n• Automation\n• Collaboration\n• Request tracking\n• Analytics\n• Surveys\n• Claims\n• Notifications\n• Business integrations\n\nWhile retaining the simplicity of WhatsApp."
+          },
+          {
+            "q": "What is the difference between Centrelatio and a chatbot?",
+            "a": "Centrelatio is not just a chatbot.\n\nIt is a complete customer relationship platform that combines :\n\n• Automation\n• Human collaboration\n• Notifications\n• Support\n• Claims\n• Loyalty\n• Business integrations\n\nwith the ability to start quickly via the Shared Client Portal or evolve into a fully dedicated deployment."
+          }
+        ]
+      },
+      {
+        "category": "Features",
+        "items": [
+          {
+            "q": "What can my customers do via Centrelatio?",
+            "a": "Your customers can :\n\n• Ask questions\n• Discover your products and services\n• Request information\n• File a claim\n• Request support\n• Provide feedback\n• Participate in a survey\n• Sign up for a loyalty program\n• Receive notifications\n• Request an appointment\n\nThese journeys can be deployed in both the Shared Client Portal and a dedicated environment."
+          },
+          {
+            "q": "Can I present my products and services on WhatsApp?",
+            "a": "Yes.\n\nCentrelatio allows you to create guided conversational journeys to present your products, services, offers and catalogs.\n\nThis feature is available from the Shared Client Portal, allowing you to quickly test WhatsApp channel interest before a full deployment."
+          },
+          {
+            "q": "Can I automate some responses?",
+            "a": "Yes.\n\nYou can automate :\n\n• FAQ\n• Request routing\n• Lead qualification\n• Satisfaction surveys\n• Claims\n• Notifications\n• Simple loyalty programs\n\nThese automations are available from the Shared Client Portal."
+          },
+          {
+            "q": "Can I transfer a conversation to an advisor?",
+            "a": "Yes, when Centrelatio is deployed on your own WhatsApp Business Platform account.\n\nThe Shared Client Portal is mainly designed for automated journeys and does not offer direct Live Chat with your teams."
+          },
+          {
+            "q": "Can I manage multiple collaborators?",
+            "a": "Yes.\n\nWith a dedicated deployment, multiple users can collaborate on conversations with different roles and access levels."
+          }
+        ]
+      },
+      {
+        "category": "Support & Claims",
+        "items": [
+          {
+            "q": "Can I manage customer claims?",
+            "a": "Yes.\n\nCentrelatio allows you to set up dedicated claims journeys.\n\nIn the Shared Client Portal, claims can be collected and qualified automatically.\n\nIn a dedicated deployment, they can also be assigned, tracked and handled by your teams."
+          },
+          {
+            "q": "Can I track a customer's full history?",
+            "a": "Yes.\n\nA dedicated deployment offers a complete view of interactions and customer history."
+          },
+          {
+            "q": "Can I measure customer satisfaction?",
+            "a": "Yes.\n\nCentrelatio enables the deployment of :\n\n• Surveys\n• Satisfaction questionnaires\n• Review collection\n\nThese features are also available in the Shared Client Portal."
+          }
+        ]
+      },
+      {
+        "category": "Marketing & Loyalty",
+        "items": [
+          {
+            "q": "Can I send promotions on WhatsApp?",
+            "a": "Yes.\n\nYou can send promotional campaigns in compliance with WhatsApp Business Platform rules."
+          },
+          {
+            "q": "Can I create a loyalty program?",
+            "a": "Yes.\n\nCentrelatio allows you to communicate :\n\n• Points balances\n• Rewards\n• Personalized offers\n• Member benefits\n\nSimplified versions can be implemented via the Shared Client Portal."
+          },
+          {
+            "q": "Can I segment my contacts?",
+            "a": "Yes.\n\nA dedicated deployment enables advanced segmentation and targeted campaigns."
+          }
+        ]
+      },
+      {
+        "category": "Notifications",
+        "items": [
+          {
+            "q": "What types of notifications can I send?",
+            "a": "For example :\n\n• Order confirmation\n• Appointment confirmation\n• Appointment reminder\n• Delivery status\n• Payment received\n• Subscription renewal\n• Important alerts\n• Documents available"
+          },
+          {
+            "q": "Are notifications automatic?",
+            "a": "Yes.\n\nThey can be triggered by your systems or business integrations."
+          }
+        ]
+      },
+      {
+        "category": "Integrations",
+        "items": [
+          {
+            "q": "Can Centrelatio connect to my CRM?",
+            "a": "Yes.\n\nA dedicated deployment enables integrations with :\n\n• Salesforce\n• HubSpot\n• Zoho\n• Microsoft Dynamics\n• Proprietary CRMs"
+          },
+          {
+            "q": "Can Centrelatio connect to an ERP?",
+            "a": "Yes.\n\nERPs, business software and internal applications can be connected via API or webhooks."
+          },
+          {
+            "q": "Do you provide APIs?",
+            "a": "Yes.\n\nCentrelatio exposes APIs and webhooks for full integration with your information system."
+          },
+          {
+            "q": "Can I connect my e-commerce site?",
+            "a": "Yes.\n\nShopify, WooCommerce, Magento, PrestaShop and other platforms can be integrated."
+          }
+        ]
+      },
+      {
+        "category": "WhatsApp Business",
+        "items": [
+          {
+            "q": "Do I need a WhatsApp Business Platform account?",
+            "a": "Not necessarily to start.\n\nYou can :\n\n• Start quickly via the Centrelatio Shared Client Portal\n• Deploy Centrelatio on your own WhatsApp Business Platform account to benefit from all advanced features."
+          },
+          {
+            "q": "Can you support us in creating the account?",
+            "a": "Yes.\n\nWe support our clients with :\n\n• Account creation\n• Meta verification\n• Configuration\n• Templates\n• Production launch"
+          },
+          {
+            "q": "Can I keep my current number?",
+            "a": "In most cases, yes."
+          }
+        ]
+      },
+      {
+        "category": "Deployment & Billing",
+        "items": [
+          {
+            "q": "Is there a trial period?",
+            "a": "Yes.\n\nDepending on your project, we can set up a demo or pilot.\n\nMany businesses choose to start with the Centrelatio Shared Client Portal, which allows quick deployment of automated journeys without a complex technical project."
+          },
+          {
+            "q": "Why start with the Shared Client Portal?",
+            "a": "Because it allows you to :\n\n• Test WhatsApp effectiveness\n• Deploy FAQs quickly\n• Set up a product and service presentation bot\n• Launch satisfaction surveys via QR Code\n• Collect information requests\n• Manage automated claims\n• Test simple loyalty programs\n\nbefore investing in a dedicated WhatsApp Business Platform account."
+          },
+          {
+            "q": "What is the difference between the Shared Client Portal and a dedicated deployment?",
+            "a": "The Shared Client Portal is ideal for getting started quickly and testing the WhatsApp channel.\n\nA dedicated deployment adds notably :\n\n• Your own WhatsApp number\n• Live Chat with agents\n• Multi-agent collaboration\n• Advanced customer history\n• Integrated CRM\n• ERP integrations\n• Advanced reporting\n• Custom automations\n• Full control over the customer experience"
+          },
+          {
+            "q": "How does billing work?",
+            "a": "Pricing depends in particular on :\n\n• Deployment mode (Shared Portal or Dedicated Account)\n• Number of users\n• Features enabled\n• Integrations required\n• Volume of notifications and conversations"
+          },
+          {
+            "q": "How long does it take to get started?",
+            "a": "The Shared Client Portal can usually be set up in a few days.\n\nA full deployment on your own WhatsApp Business Platform account may take a few days to a few weeks depending on project complexity."
+          }
+        ]
+      },
+      {
+        "category": "Security & Privacy",
+        "items": [
+          {
+            "q": "Are data secured?",
+            "a": "Yes.\n\nCentrelatio applies best practices in security and data protection."
+          },
+          {
+            "q": "Who has access to conversations?",
+            "a": "Only authorized users in your organization have access to conversations."
+          },
+          {
+            "q": "Do I own the data?",
+            "a": "Yes.\n\nYou remain the owner of your data and your customer relationships."
+          }
+        ]
+      }
+    ]
   }
 }
