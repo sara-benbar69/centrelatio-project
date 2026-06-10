@@ -257,11 +257,11 @@
         "items": [
           {
             "q": "Qu'est-ce que Centrelatio ?",
-            "a": "Centrelatio est une plateforme de relation client sur WhatsApp qui permet aux entreprises, retailers et institutions de centraliser leurs échanges avec leurs clients, prospects et usagers.\n\nSelon vos besoins, Centrelatio peut être déployé sur votre propre compte WhatsApp Business Platform ou via le Portail Client Mutualisé Centrelatio, permettant un démarrage rapide sans création immédiate de compte WhatsApp API."
+            "a": "Centrelatio est une plateforme de relation client sur WhatsApp qui permet aux entreprises, commerçants et institutions de centraliser leurs échanges avec leurs clients, prospects et usagers.\n\nSelon vos besoins, Centrelatio peut être déployé sur votre propre compte WhatsApp Business Platform ou via le Portail Client Mutualisé Centrelatio, permettant un démarrage rapide sans création immédiate de compte WhatsApp API."
           },
           {
             "q": "À qui s'adresse Centrelatio ?",
-            "a": "Centrelatio s'adresse aux :\n\n• Retailers\n• Banques\n• Assurances\n• Établissements de santé\n• Administrations\n• Établissements scolaires\n• Hôtels\n• E-commerçants\n• Réseaux de franchises\n• Associations\n\nToute organisation souhaitant améliorer sa relation client sur WhatsApp."
+            "a": "Centrelatio s'adresse aux :\n\n• Commerçants\n• Banques\n• Assurances\n• Établissements de santé\n• Administrations\n• Établissements scolaires\n• Hôtels\n• E-commerçants\n• Réseaux de franchises\n• Associations\n\nToute organisation souhaitant améliorer sa relation client sur WhatsApp."
           },
           {
             "q": "Faut-il installer une application pour utiliser Centrelatio ?",
@@ -298,7 +298,7 @@
           },
           {
             "q": "Puis-je transférer une conversation à un conseiller ?",
-            "a": "Oui, lorsque Centrelatio est déployé sur votre propre compte WhatsApp Business Platform.\n\nLe Portail Client Mutualisé est principalement conçu pour les parcours automatisés et ne propose pas de Live Chat direct avec vos équipes."
+            "a": "Oui, lorsque Centrelatio est déployé sur votre propre compte WhatsApp Business Platform.\n\nLe Portail Client Mutualisé est principalement conçu pour les parcours automatisés et ne propose pas de chat en direct avec vos équipes."
           },
           {
             "q": "Puis-je gérer plusieurs collaborateurs ?",
@@ -404,7 +404,7 @@
           },
           {
             "q": "Quelle est la différence entre le Portail Client Mutualisé et un déploiement dédié ?",
-            "a": "Le Portail Client Mutualisé est idéal pour démarrer rapidement et tester le canal WhatsApp.\n\nLe déploiement dédié ajoute notamment :\n\n• Votre propre numéro WhatsApp\n• Live Chat avec agents\n• Collaboration multi-agents\n• Historique client avancé\n• CRM intégré\n• Intégrations ERP\n• Reporting avancé\n• Automatisations sur mesure\n• Contrôle complet de l'expérience client"
+            "a": "Le Portail Client Mutualisé est idéal pour démarrer rapidement et tester le canal WhatsApp.\n\nLe déploiement dédié ajoute notamment :\n\n• Votre propre numéro WhatsApp\n• Chat en direct avec agents\n• Collaboration multi-agents\n• Historique client avancé\n• CRM intégré\n• Intégrations ERP\n• Reporting avancé\n• Automatisations sur mesure\n• Contrôle complet de l'expérience client"
           },
           {
             "q": "Comment fonctionne la facturation ?",
@@ -434,7 +434,7 @@
         ]
       }
     ]
-  ,
+  },
   "tarifs": {
     "header": {
       "titlePart1": "Demandez votre",
@@ -450,33 +450,40 @@
     "billingNote": "Facturation annuelle avec 20% de réduction inclus.",
     "plans": {
       "starter": {
-        "title": "Starter",
+        "title": "Démarrage",
         "subtitle": "Pour les petites équipes",
         "desc": "Recevez une proposition rapide adaptée aux petites équipes et à vos premiers échanges WhatsApp.",
-        "features": ["1 utilisateur","1 numéro WhatsApp","Réponses rapides","FAQ & Messages prédéfinis","Statistiques de base"]
+        "features": ["1 utilisateur","1 numéro WhatsApp","Réponses rapides","FAQ & Messages prédéfinis","Statistiques de base"],
+        "cta": "Demander un devis"
       },
       "growth": {
-        "title": "Growth",
+        "title": "Croissance",
         "subtitle": "Pour les équipes en croissance",
         "desc": "Un plan conçu pour accompagner votre croissance et vos volumes WhatsApp.",
-        "features": ["3 utilisateurs","3 numéros WhatsApp","Toutes les fonctionnalités Starter","Boîte de réception partagée","Automatisations & Notifications","Statistiques avancées"]
+        "features": ["3 utilisateurs","3 numéros WhatsApp","Toutes les fonctionnalités Démarrage","Boîte de réception partagée","Automatisations & Notifications","Statistiques avancées"],
+        "cta": "Obtenir mon devis"
       },
       "business": {
-        "title": "Business",
+        "title": "Entreprise",
         "subtitle": "Pour les entreprises",
         "desc": "Recevez une proposition structurée pour des opérations WhatsApp à grande échelle.",
-        "features": ["Utilisateurs illimités","Numéros WhatsApp illimités","Toutes les fonctionnalités Growth","Attribution & Rôles","Intégrations CRM & API","Rapports avancés"]
+        "features": ["Utilisateurs illimités","Numéros WhatsApp illimités","Toutes les fonctionnalités Croissance","Attribution & Rôles","Intégrations CRM & API","Rapports avancés"],
+        "cta": "Demander un devis"
       },
       "enterprise": {
-        "title": "Enterprise",
+        "title": "Grand compte",
         "subtitle": "Pour les grandes organisations",
         "desc": "Recevez une proposition sur-mesure avec accompagnement, SLA et sécurité avancée.",
-        "features": ["Tout du plan Business","SLA & Support prioritaire","Intégrations sur-mesure","Formation & Accompagnement","Sécurité & Conformité avancées"]
+        "features": ["Tout du plan Entreprise","SLA & Assistance prioritaire","Intégrations sur-mesure","Formation & Accompagnement","Sécurité & Conformité avancées"],
+        "priceText": "Sur devis",
+        "cta": "Recevoir une proposition"
       }
     },
     "footer": {
-      "includes": "Tous les plans incluent : 100% WhatsApp officiel • Sécurité des données • Support 24h/7"
+      "includes": "Tous les plans incluent : 100% WhatsApp officiel • Sécurité des données • Support 24h/7",
+      "saving": "Vous économisez 20% par rapport au paiement mensuel."
     },
+    "popularBadge": "LE PLUS POPULAIRE",
     "journey": {
       "titlePart1": "Une plateforme complète",
       "titleHighlight": "pour des relations durables",
@@ -511,7 +518,7 @@
   },
   "entreprises": {
     "header": {
-      "titlePart1": "Pour les entreprises, retailers",
+      "titlePart1": "Pour les entreprises, commerçants",
       "titleHighlight": "et institutions",
       "subtitle": "Centralisez toutes vos conversations WhatsApp, collaborez en équipe et offrez une expérience client exceptionnelle."
     },
@@ -549,6 +556,5 @@
     },
     "button": { "sending": "Envoi...", "submit": "Envoyer la demande" }
   }
-}
 }
 

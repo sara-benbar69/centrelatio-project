@@ -117,12 +117,12 @@ function Tarifs({ showTestimonials = true }) {
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.starter.features.3')}</li>
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.starter.features.4')}</li>
                     </ul>
-                    <a href="#contact-form" className="btn btn-secondary">Demander un devis</a>
+                    <a href="#contact-form" className="btn btn-secondary">{t('tarifs.plans.starter.cta')}</a>
                 </div>
 
                 
                 <div className="pricing-card popular">
-                    <div className="popular-badge">LE PLUS POPULAIRE</div>
+                    <div className="popular-badge">{t('tarifs.popularBadge')}</div>
                     <div className="card-header">
                         <div className="icon-circle icon-blue"><i className="fa-solid fa-user-group"></i></div>
                         <div>
@@ -142,7 +142,7 @@ function Tarifs({ showTestimonials = true }) {
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.4')}</li>
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.growth.features.5')}</li>
                     </ul>
-                    <a href="#contact-form" className="btn btn-primary">Obtenir mon devis</a>
+                    <a href="#contact-form" className="btn btn-primary">{t('tarifs.plans.growth.cta')}</a>
                 </div>
 
                 
@@ -166,7 +166,7 @@ function Tarifs({ showTestimonials = true }) {
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.4')}</li>
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.business.features.5')}</li>
                     </ul>
-                    <a href="#contact-form" className="btn btn-secondary green-border">Demander un devis</a>
+                    <a href="#contact-form" className="btn btn-secondary green-border">{t('tarifs.plans.business.cta')}</a>
                 </div>
 
                 
@@ -179,7 +179,7 @@ function Tarifs({ showTestimonials = true }) {
                         </div>
                     </div>
                     <div className="price">
-                        <span className="amount text-large">Sur devis</span>
+                        <span className="amount text-large">{t('tarifs.plans.enterprise.priceText')}</span>
                     </div>
                     <p className="card-desc">{t('tarifs.plans.enterprise.desc')}</p>
                     <ul className="features-list">
@@ -189,13 +189,13 @@ function Tarifs({ showTestimonials = true }) {
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.enterprise.features.3')}</li>
                         <li><i className="fa-solid fa-check icon-green"></i> {t('tarifs.plans.enterprise.features.4')}</li>
                     </ul>
-                    <a href="#contact-form" className="btn btn-secondary green-border">Recevoir une proposition</a>
+                    <a href="#contact-form" className="btn btn-secondary green-border">{t('tarifs.plans.enterprise.cta')}</a>
                 </div>
             </div>
             
             <div className="pricing-footer-text">
                     <p><i className="fa-solid fa-circle-info icon-green"></i> {t('tarifs.footer.includes')}</p>
-                {billing === 'yearly' && <p className="pricing-footer-saving">Vous économisez 20% par rapport au paiement mensuel.</p>}
+                {billing === 'yearly' && <p className="pricing-footer-saving">{t('tarifs.footer.saving')}</p>}
             </div>
         </section>
 
@@ -203,7 +203,7 @@ function Tarifs({ showTestimonials = true }) {
         <section className="platform-journey bg-light-section">
             <div className="journey-header">
                 <div className="j-header-text">
-                    <h2>{t('tarifs.journey.titlePart1')} <br />pour des <span className="highlight-green">{t('tarifs.journey.titleHighlight')}</span></h2>
+                    <h2>{t('tarifs.journey.titlePart1')} <br /><span className="highlight-green">{t('tarifs.journey.titleHighlight')}</span></h2>
                     <p>{t('tarifs.journey.subtitle')}</p>
                 </div>
                 

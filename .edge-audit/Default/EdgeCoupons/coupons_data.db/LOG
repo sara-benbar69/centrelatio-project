@@ -1,0 +1,5 @@
+2026/06/10-01:25:25.042 43b4 Creating DB C:\Users\pc_Sara\Desktop\centrelatio\.edge-audit\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/06/10-01:25:25.059 43b4 Reusing MANIFEST C:\Users\pc_Sara\Desktop\centrelatio\.edge-audit\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/06/10-01:25:37.496 2a8 Level-0 table #5: started
+2026/06/10-01:25:37.523 2a8 Level-0 table #5: 682669 bytes OK
+2026/06/10-01:25:37.527 2a8 Delete type=0 #3

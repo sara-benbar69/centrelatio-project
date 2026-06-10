@@ -454,30 +454,37 @@
         "title": "Starter",
         "subtitle": "For small teams",
         "desc": "Get a quick proposal tailored to small teams and your first WhatsApp exchanges.",
-        "features": ["1 user","1 WhatsApp number","Quick replies","FAQ & canned messages","Basic analytics"]
+        "features": ["1 user","1 WhatsApp number","Quick replies","FAQ & canned messages","Basic analytics"],
+        "cta": "Request a quote"
       },
       "growth": {
         "title": "Growth",
         "subtitle": "For growing teams",
         "desc": "A plan designed to support your growth and WhatsApp volumes.",
-        "features": ["3 users","3 WhatsApp numbers","All Starter features","Shared inbox","Automations & Notifications","Advanced analytics"]
+        "features": ["3 users","3 WhatsApp numbers","All Starter features","Shared inbox","Automations & Notifications","Advanced analytics"],
+        "cta": "Get my quote"
       },
       "business": {
         "title": "Business",
         "subtitle": "For businesses",
         "desc": "Receive a structured proposal for large-scale WhatsApp operations.",
-        "features": ["Unlimited users","Unlimited WhatsApp numbers","All Growth features","Attribution & Roles","CRM & API integrations","Advanced reporting"]
+        "features": ["Unlimited users","Unlimited WhatsApp numbers","All Growth features","Attribution & Roles","CRM & API integrations","Advanced reporting"],
+        "cta": "Request a quote"
       },
       "enterprise": {
         "title": "Enterprise",
         "subtitle": "For large organizations",
         "desc": "Receive a tailor-made proposal with support, SLA and advanced security.",
-        "features": ["All Business features","SLA & Priority support","Custom integrations","Training & Onboarding","Advanced security & compliance"]
+        "features": ["All Business features","SLA & Priority support","Custom integrations","Training & Onboarding","Advanced security & compliance"],
+        "priceText": "On request",
+        "cta": "Receive a proposal"
       }
     },
     "footer": {
-      "includes": "All plans include: 100% official WhatsApp • Data security • 24/7 support"
+      "includes": "All plans include: 100% official WhatsApp • Data security • 24/7 support",
+      "saving": "You save 20% compared to monthly payments."
     },
+    "popularBadge": "MOST POPULAR",
     "journey": {
       "titlePart1": "A complete platform",
       "titleHighlight": "for lasting relationships",
