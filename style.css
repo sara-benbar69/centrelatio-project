@@ -684,8 +684,9 @@ section:nth-child(even) {
     font-size: 0.85rem;
     font-weight: 600;
 }
+.resource-link,
 .resource-link:hover {
-    text-decoration: underline;
+    text-decoration: none !important;
 }
 
 /* For Businesses */

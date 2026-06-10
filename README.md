@@ -131,7 +131,7 @@ POST /submit.php
 
 ## Exemple de requête
 
-```json
+```jsonRemove-Item -Recurse -Force .edge-audit
 {
   "fullname": "John Doe",
   "whatsappNumber": "+212600000000",
