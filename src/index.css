@@ -5129,3 +5129,10 @@ svg {
     gap: 4rem;
   }
 }
+.resources-grid {
+    align-items: start !important;
+}
+
+.resource-card-large {
+    height: auto !important;
+}
